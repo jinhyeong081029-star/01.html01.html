@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- HTML5 문서라는 선언 -->
+
+<html lang="ko">
+<!-- 문서의 언어를 한국어로 설정 -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 문자 인코딩 (한글 깨짐 방지) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 모바일 화면 대응 -->
+
+    <title>html 01 -tag를 알아보자.</title>
+    <!-- 브라우저 탭 제목 -->
+
+    <style>
+        /* div는 블록 요소 */
+        div {
+            background: #f00;
+            /* 빨간 배경 */
+            width: 400px;
+            /* 가로 크기 */
+            height: 400px;
+            /* 세로 크기 */
+
+            margin-top: 40px;
+            /* 위 여백 */
+            margin-bottom: 40px;
+            /* 아래 여백 */
+
+            padding-left: 40px;
+            /* 왼쪽 안쪽 여백 */
+            padding-right: 40px;
+            /* 오른쪽 안쪽 여백 */
+
+            border: 1px solid #333;
+            /* 테두리 */
+        }
+
+        /* span, a는 인라인 요소 */
+        span,
+        a {
+            background: #ff0;
+            /* 노란 배경 */
+
+            width: 400px;
+            /* (인라인이라 적용 안됨) */
+            height: 400px;
+            /* (인라인이라 적용 안됨) */
+
+            margin-top: 40px;
+            /* (인라인이라 적용 안됨) */
+            margin-bottom: 40px;
+            /* (인라인이라 적용 안됨) */
+
+            padding-left: 40px;
+            padding-right: 40px;
+
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 블록 요소 예제 (줄 전체 차지) -->
+    <div>box</div>
+    <div>box</div>
+
+    <!-- 인라인 요소 예제 (한 줄에 나란히) -->
+    <span>inline</span>
+    <span>inline</span>
+
+    <!-- 링크 요소 (내용 없음 → 안 보임) -->
+    <a href="inline"></a>
+
+</body>
+
+</html>
